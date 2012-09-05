@@ -11,21 +11,35 @@
 
     <!-- my stuff -->
     <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+
+    <!-- Paper.js -->
+    <script src="assets/js/paper.js" type="text/javascript"></script>
   </head>
 
   <body>
-    <header class="navbar navbar-inverse navbar-fixed-top">
+    <header class="navbar navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a href="index.html" class="brand">JS-Chalkboard</a>
           <nav class="nav-collapse collapse">
             <ul class="nav nav-pills">
-              <li><a href="paper.html">Paper.js</a></li>
+              <li class="active"><a href="paper.html">Paper.js</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-  </body>
 
+    <div id="row">
+      <nav class="span2">
+      </nav>
+
+      <section id="content" class="span10">
+
+        <div id="chalkboard" width="800px" height="600">
+        </div>
+      </section>
+    </div>
+  </body>
+  
 </html>
