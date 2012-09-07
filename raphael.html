@@ -13,7 +13,8 @@
     <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 
     <!-- Paper.js -->
-    <script type="text/javascript" src="assets/js/paper/paper.js"></script>
+    <script type="text/javascript" src="assets/js/raphael/raphael-min.js"></script>
+    <script type="text/javascript" src="assets/js/raphael/first_test.js"></script>
   </head>
 
   <body>
@@ -23,8 +24,8 @@
           <a href="index.html" class="brand">JS-Chalkboard</a>
           <nav class="nav-collapse collapse">
             <ul class="nav nav-pills">
-              <li class="active"><a href="paper.html">Paper.js</a></li>
-              <li><a href="raphael.html">Raphael.js</a></li>
+              <li><a href="paper.html">paper.js</a></li>
+              <li class="active"><a href="raphael.html">Raphael.js</a></li>
             </ul>
           </nav>
         </div>
@@ -32,15 +33,17 @@
     </header>
 
     <div id="row">
+
       <nav class="span2">
+        <div id="toolbox" class="btn-group btn-group-vertical pull-right">
+          <button id="btn_line" class="btn">Line</button>
+          <button id="btn_circle" class="btn">Circle</button>
+        </div>
       </nav>
 
       <section id="content" class="span10">
 
         <div id="chalkboard-container" width="800px" height="600">
-          <canvas id="chalkboard" width="800" height="800">
-            This browser does not support canvas!
-          </canvas>
         </div>
       </section>
     </div>

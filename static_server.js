@@ -27,7 +27,15 @@ http.createServer(function(request, response) {
         return;
       }
 
-      response.writeHead(200);
+      extension = filename.split('.').pop();
+      
+      switch(extension) {
+        case 'css': type = {'Content-Type': 'text/css'}; break;
+        case 'js':  type = {'Content-Type': 'text/javascript'}; break;
+        default:    type = {}
+      }
+
+      response.writeHead(200, type);
       response.write(file, "binary");
       response.end();
     });
