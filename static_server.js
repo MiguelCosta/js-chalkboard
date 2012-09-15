@@ -30,8 +30,9 @@ http.createServer(function(request, response) {
       extension = filename.split('.').pop();
       
       switch(extension) {
-        case 'css': type = {'Content-Type': 'text/css'}; break;
-        case 'js':  type = {'Content-Type': 'text/javascript'}; break;
+        case 'css':    type = {'Content-Type': 'text/css'}; break;
+        case 'js':     type = {'Content-Type': 'text/javascript'}; break;
+        case 'coffee': type = {'Content-Type': 'text/javascript'}; break;
         default:    type = {}
       }
 

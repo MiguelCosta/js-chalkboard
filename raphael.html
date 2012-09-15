@@ -12,10 +12,11 @@
     <!-- my stuff -->
     <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 
-    <!-- Paper.js -->
+    <!-- Raphael.js -->
+    <script src="https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js"></script>
     <script type="text/javascript" src="assets/js/raphael/raphael-min.js"></script>
     <script type="text/javascript" src="assets/js/raphael/raphaelle.js"></script>
-    <script type="text/javascript" src="assets/js/raphael/first_test.js"></script>
+    <script type="text/coffeescript" src="assets/js/raphael/first_test.coffee"></script>
 
     <!-- Color picker -->
     <link rel="stylesheet" media="screen" type="text/css" href="assets/css/colorpicker.css" />
@@ -41,6 +42,7 @@
 
       <nav class="span4">
         <div id="toolbox" class="btn-group btn-group-vertical pull-right">
+          <button id="btn_player" class="btn">Player</button>
           <button id="btn_line" class="btn">Line</button>
           <!--<button id="btn_circle" class="btn">Circle</button>-->
         </div>
