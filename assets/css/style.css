@@ -1,13 +1,10 @@
 #chalkboard-container {
   width: 800px;
   height: 600px;
-  background-image: url('../img/bsod.jpg');
+  /**background-image: url('../images/bsod.jpg');*/
 
 }
 
 #chalkboard {
-}
-
-#toolbox ul {
-  list-style-type: none
+  /**background-image: url('../images/back.jpg');*/
 }

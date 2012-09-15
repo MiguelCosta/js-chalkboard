@@ -14,7 +14,12 @@
 
     <!-- Paper.js -->
     <script type="text/javascript" src="assets/js/raphael/raphael-min.js"></script>
+    <script type="text/javascript" src="assets/js/raphael/raphaelle.js"></script>
     <script type="text/javascript" src="assets/js/raphael/first_test.js"></script>
+
+    <!-- Color picker -->
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/css/colorpicker.css" />
+  <script type="text/javascript" src="assets/js/colorpicker.js"></script>
   </head>
 
   <body>
@@ -34,14 +39,17 @@
 
     <div id="row">
 
-      <nav class="span2">
+      <nav class="span4">
         <div id="toolbox" class="btn-group btn-group-vertical pull-right">
           <button id="btn_line" class="btn">Line</button>
-          <button id="btn_circle" class="btn">Circle</button>
+          <!--<button id="btn_circle" class="btn">Circle</button>-->
+        </div>
+
+        <div id="colorpicker-container">
         </div>
       </nav>
 
-      <section id="content" class="span10">
+      <section id="content" class="span8">
 
         <div id="chalkboard-container" width="800px" height="600">
         </div>
